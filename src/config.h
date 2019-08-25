@@ -1,0 +1,14 @@
+#ifndef ZELDA_CONFIG_H
+#define ZELDA_CONFIG_H
+
+const int WINDOW_WIDTH = 1280;
+const int WINDOW_HEIGHT = 768;
+const int WORLD_VIEW_SCALE = 2;
+
+const int WORLD_VIEW_WIDTH = WINDOW_WIDTH / WORLD_VIEW_SCALE;
+const int WORLD_VIEW_HEIGHT = WINDOW_HEIGHT / WORLD_VIEW_SCALE;
+
+const float STEP = 1.0f/60.0f;
+const float TIME_SCALE = 60.0;
+
+#endif //ZELDA_CONFIG_H
