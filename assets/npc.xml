@@ -1,0 +1,12 @@
+<npcs>
+    <npc typeName="tom" spriteName="npc" dispalyName="汤姆">
+        <dialogue id="1"/>
+        <destroyable hp="100"/>
+    </npc>
+    <npc typeName="log" spriteName="log" dispalyName="树人">
+        <destroyable hp="100"/>
+    </npc>
+    <npc typeName="hero" spriteName="hero" dispalyName="Link">
+        <destroyable hp="100"/>
+    </npc>
+</npcs>

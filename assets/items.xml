@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<items>
+    <item name="pineapple">
+        <displayName>菠萝</displayName>
+    </item>
+    <item name="apple">
+        <displayName>苹果</displayName>
+    </item>
+    <item name="coin">
+        <displayName>金币</displayName>
+    </item>
+    <item name="kiwi">
+        <displayName>猕猴桃</displayName>
+    </item>
+    <item name="watermelon">
+        <displayName>西瓜</displayName>
+    </item>
+</items>

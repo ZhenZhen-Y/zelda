@@ -1,0 +1,33 @@
+<story name="Tom and pineapple" condition="True">
+
+    <dialogue id="1">
+        <text>可以带给我3个菠萝吗？</text>
+        <choice nextDialogueId="2">
+            很抱歉，我的菠萝不能给你
+        </choice>
+        <choice condition="countItem('pineapple') >= 3" nextDialogueId="3">
+            好的，请收下
+        </choice>
+        <choice condition="countItem('pineapple') < 3" nextDialogueId="2">
+            我没有那么多菠萝啊
+        </choice>
+    </dialogue>
+
+    <dialogue id="2">
+        <text>真遗憾，好想吃菠萝啊。</text>
+    </dialogue>
+
+    <dialogue id="3">
+        <text>
+            非常感谢！
+
+            但我没有什么可以答谢你的……
+            就拿这个猕猴桃作为谢礼吧！
+        </text>
+        <action>
+            removeItem('pineapple', 3)
+            addItem('kiwi', 1)
+        </action>
+    </dialogue>
+
+</story>
