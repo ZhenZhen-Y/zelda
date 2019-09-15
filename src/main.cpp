@@ -21,15 +21,16 @@ void initialize(entt::registry &registry, sf::RenderWindow &win) {
         printf("Failed to load shader\n");
     }
 
+    // font: class for loading and manipulating characters fonts
     auto &font = registry.set<sf::Font>();
     if (!font.loadFromFile("assets/font.ttc")) {
         throw runtime_error("Failed to load font");
     }
 
     auto &b2world = registry.set<b2World>(b2Vec2(0.0f, 0.0f));
-    auto* debugDraw = new SFMLDebugDraw(rt.worldRenderTarget);
-    debugDraw->SetFlags(b2Draw::e_shapeBit);
-    b2world.SetDebugDraw(debugDraw);
+    // auto* debugDraw = new SFMLDebugDraw(rt.worldRenderTarget);
+    // debugDraw->SetFlags(b2Draw::e_shapeBit);
+    // b2world.SetDebugDraw(debugDraw);
     b2world.SetContactListener(new ContactListener(registry));
 
     registry.set<ResourceManager>();
@@ -195,11 +196,13 @@ int main(int narg, char* argv[])  {
             worldRenderSprite.setTexture(rt.worldRenderTarget.getTexture());
             updateGraphic(registry);
 
+            // Draw the sprite
             window.draw(worldRenderSprite, &rt.worldShader);
 
             // Update UI
             updateUI(dt, registry);
 
+            // Update the window
             window.display();
         }
     } catch (runtime_error &e) {

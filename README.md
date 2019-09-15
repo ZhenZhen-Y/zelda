@@ -18,7 +18,7 @@
 * [ ] Cook
 * [ ] Save & load
 * [ ] Construct buildings
-* [x] Day & night
+* [ ] Day & night
 * [ ] Blood moon
 * [ ] Merchant
 * [ ] AI

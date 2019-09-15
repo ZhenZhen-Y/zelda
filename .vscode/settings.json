@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "functional": "cpp",
+        "__string": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "regex": "cpp",
+        "string": "cpp"
+    }
+}
